@@ -1,0 +1,17 @@
+{
+  "name": "cline-terminal-notify",
+  "version": "1.0.0",
+  "description": "Desktop notifications through your terminal when Cline finishes or asks a question. From the makers of Agent Terminal (https://4nuva.dev/agent-terminal/), which also forwards them to your phone.",
+  "type": "module",
+  "main": "plugin.js",
+  "author": "Agent Terminal (https://4nuva.dev/agent-terminal/)",
+  "homepage": "https://4nuva.dev/agent-terminal/",
+  "repository": { "type": "git", "url": "git+https://github.com/4nuva/cline-terminal-notify.git" },
+  "license": "MIT",
+  "keywords": ["cline", "cline-plugin", "notifications", "terminal", "osc", "agent-terminal"],
+  "scripts": { "test": "node --test test/*.test.js" },
+  "files": ["plugin.js", "LICENSE", "README.md"],
+  "cline": {
+    "plugins": [{ "paths": ["./plugin.js"], "capabilities": ["hooks"] }]
+  }
+}
